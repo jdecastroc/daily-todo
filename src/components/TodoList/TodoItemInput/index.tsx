@@ -15,6 +15,7 @@ const TodoItemInput:React.FunctionComponent<IProps> = props => {
   const [inputTodo, setInputTodo] = React.useState('');
 
   const onItemCreation = () => {
+    if(inputTodo.length === 0) return;
     props.onCreate(inputTodo);
     setInputTodo('');
   }

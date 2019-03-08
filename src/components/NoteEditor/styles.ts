@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 20px;
+  h1 {
+    font-size: 25px;
+  }
   .mde-header {
   flex-shrink: 0;
   display: flex;

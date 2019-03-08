@@ -2,12 +2,9 @@ import * as React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 // Import styled components ServerStyleSheet
 import { ServerStyleSheet } from 'styled-components';
+import { IStyledComponentsTagsProps } from '../src/common/types';
 
-interface Props {
-  styleTags: any
-}
-
-export default class MyDocument extends Document<Props> {
+export default class MyDocument extends Document<IStyledComponentsTagsProps> {
   static getInitialProps({ renderPage }: any) {
     //Styled-componentes style injection
     const sheet = new ServerStyleSheet();
@@ -26,7 +23,11 @@ export default class MyDocument extends Document<Props> {
           {this.props.styleTags}
           <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans" />
         </Head>
-        <body>
+        <body style={{
+           'box-sizing': 'border-box', 
+           margin: '0',
+           padding: '0',
+        }}>
           <Main />
           <NextScript />
         </body>

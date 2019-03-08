@@ -5,8 +5,10 @@ import "react-mde/lib/styles/css/react-mde-all.css";
 import {
   Container,
 } from './styles';
+import {INoteEditorState} from '../../common/types';
 
-export default class NoteEditor extends React.Component {
+
+export default class NoteEditor extends React.Component<{}, INoteEditorState> {
   constructor (props:any) {
     super(props);
     this.state = {
