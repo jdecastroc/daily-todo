@@ -8,6 +8,7 @@ export const Base = styled.div`
   height: 100%;
   width: 100%;
   border-left: 2px solid #f2f2f2;
+  margin-left: 300px;
 `;
 
 export const ComponentHeader = styled.div`

@@ -19,9 +19,13 @@ export default class MyDocument extends Document<IStyledComponentsTagsProps> {
     return (
       <html lang="en">
         <Head>
-          <title>My page</title>
+          <title>My diary</title>
           {this.props.styleTags}
           <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans" />
+          <link
+            rel="stylesheet"
+            href="https://unpkg.com/react-table@latest/react-table.css"
+          />
         </Head>
         <body style={{
            'box-sizing': 'border-box', 

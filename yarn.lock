@@ -726,6 +726,12 @@
     "@types/prop-types" "*"
     "@types/react" "*"
 
+"@types/react-table@^6.7.22":
+  version "6.7.22"
+  resolved "https://registry.yarnpkg.com/@types/react-table/-/react-table-6.7.22.tgz#ce7c327f7f4b4ac04c6b4e92ffd090f8c8534d97"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@^16.8.3":
   version "16.8.3"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.3.tgz#7b67956f682bea30a5a09b3242c0784ff196c848"
@@ -4728,6 +4734,12 @@ react-mde@^7.0.3:
     classnames "^2.2.5"
     insert-text-at-cursor "^0.1.2"
     npm "^6.1.0"
+
+react-table@^6.9.2:
+  version "6.9.2"
+  resolved "https://registry.yarnpkg.com/react-table/-/react-table-6.9.2.tgz#6a59adfeb8d5deced288241ed1c7847035b5ec5f"
+  dependencies:
+    classnames "^2.2.5"
 
 react@^16.8.2:
   version "16.8.2"

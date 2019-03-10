@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Base = styled.div`
   height: 100%;
+  position: fixed;
   width: 300px;
 `;
 

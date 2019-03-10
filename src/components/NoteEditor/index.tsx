@@ -1,11 +1,11 @@
 import * as React from "react";
 import ReactMde from "react-mde";
 import * as Showdown from "showdown";
-import "react-mde/lib/styles/css/react-mde-all.css";
 import {
   Container,
 } from './styles';
 import {INoteEditorState} from '../../common/types';
+import { SubmitButtonContainer } from "../ActivityComponents/MyDay/SummaryForm/styles";
 
 
 export default class NoteEditor extends React.Component<{}, INoteEditorState> {
@@ -46,6 +46,9 @@ export default class NoteEditor extends React.Component<{}, INoteEditorState> {
             selectedTab={this.state.tab}
           />
         </div>
+        <SubmitButtonContainer>
+          <button>Save Notes</button>
+        </SubmitButtonContainer>
       </Container>
     );
   }

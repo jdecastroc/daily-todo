@@ -4,6 +4,9 @@ export const Container = styled.div`
   h1 {
     font-size: 25px;
   }
+  .container {
+    margin-bottom: 10px;
+  }
   .mde-header {
   flex-shrink: 0;
   display: flex;
@@ -261,7 +264,7 @@ textarea.mde-text {
     border-top: 1px solid #c8ccd0;
     background-color: #f9f9f9;
     text-align: center;
-    height: 10px;
+    height: 20px;
     color: black;
     cursor: s-resize; }
     .react-mde .grip .icon {

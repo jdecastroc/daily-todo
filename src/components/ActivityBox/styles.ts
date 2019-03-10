@@ -10,10 +10,7 @@ export const Title = styled.h1`
 
 export const Container = styled.div`
   padding: 10px;
-  /* border-radius: 5px;
-  border: 2px solid #f2f2f2; */
   margin-top: 5px;
-  width: 500px;
   display: flex;
   flex-direction: column;
 `;
