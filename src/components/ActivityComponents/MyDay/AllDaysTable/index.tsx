@@ -5,7 +5,7 @@ import { CellContainer, Base } from './styles';
 
 const AllDaysTable = () => {
   const data = [{
-    day: '23/09/2019',
+    date: '23/09/2019',
     in: '9:00',
     out: '17:30',
     objective: 'Improve the sql query',
@@ -14,7 +14,7 @@ const AllDaysTable = () => {
       'Conocer a Marcos',
       'Hablar con mama'
     ],
-    agradecimientos: [
+    gratitudeList: [
       'Estar con kyoko',
       'Conocer a Marcos',
       'Hablar con mama'
@@ -29,8 +29,8 @@ const AllDaysTable = () => {
   }]
 
   const columns = [{
-    Header: 'Day',
-    accessor: 'day' // String-based value accessors!
+    Header: 'Date',
+    accessor: 'date' // String-based value accessors!
   }, 
   {
     Header: 'In',
@@ -69,7 +69,7 @@ const AllDaysTable = () => {
       </div> // Custom cell components!
   },{
     Header: 'Agradecimientos',
-    accessor: 'agradecimientos',
+    accessor: 'gratitudeList',
     Cell: (props:any) => 
       <div style={{display: 'flex', flexDirection: 'column'}}>
         {props.value.map((agradecimiento:string) => 

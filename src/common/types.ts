@@ -1,8 +1,8 @@
-import { MdePreview } from "react-mde/lib/definitions/components";
-
 /**
  * Its Types (e.g. enums) + constants :)
  */
+
+export const GRAPHQL_SERVER_URL = "http://localhost:4000/";
 
 export interface ObjectIndexer<T> {
   [id: string]: T;
